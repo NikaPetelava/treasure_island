@@ -30,7 +30,7 @@ if choice1 == 'left':
   choice2=input("You've come to ocean seashores. There is an island far away the ocean. Type 'Wait' to wait for a boat. Type 'Swim' to swim across: \n")
   if choice2 == 'Wait' or choice2 == 'wait':
     print("Congrats! You passed the second level succesfully!")
-    choice3 = input("You've arrived at the island. found a cave in which we found three doors.type 'first door', 'second door', 'third door'. Which one do you choose to open?: \n")
+    choice3 = input("You've arrived at the island. found a cave in which you found three doors.type 'first door', 'second door', 'third door'. Which one do you choose to open?: \n")
     if choice3 == 'first door':
       print("You fell into the lava. Game Over!")
     elif choice3 == "second door":
