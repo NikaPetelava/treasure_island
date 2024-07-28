@@ -24,15 +24,16 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 print("Welcome to treasure island!")
 print("your mission is to find treasure on island")
 
-choice1 = input("You're on the crossroad. where do you want to go? type 'left' or 'right': \n")
+
+choice1 = input("You're on the crossroad. Which way do you go? Type 'left' or 'right': \n")
 if choice1 == 'left':
   print("Congrats! you passed the first level succesfully!")
-  choice2=input("You've come to ocean seashores. There is an island far away the ocean. Type 'Wait' to wait for a boat. Type 'Swim' to swim across: \n")
+  choice2=input("You have arrived at the ocean seashore. There is an island in the distance across the ocean. Type 'Wait' to wait for a boat or 'Swim' to go across.: \n")
   if choice2 == 'Wait' or choice2 == 'wait':
     print("Congrats! You passed the second level succesfully!")
-    choice3 = input("You've arrived at the island. found a cave in which you found three doors.type 'first door', 'second door', 'third door'. Which one do you choose to open?: \n")
+    choice3 = input("You've arrived at the island and stumbled upon a cave with three doors. Type 'first door,' 'second door,' or 'third door' to enter.: \n")
     if choice3 == 'first door':
-      print("You fell into the lava. Game Over!")
+      print("You fell into the lava. Game over!")
     elif choice3 == "second door":
       print("You've eaten by a monster. Game Over!") 
     elif choice3 == "third door":
@@ -41,6 +42,4 @@ if choice1 == 'left':
     print("You've eaten by Shark. Game Over!") 
 else:
   print("Oh no! You've fallen into a hole.")
-# არჩევანი 2: მარცხენის არჩევით მივედით ზღვის სანაპიროსთან და შემდეგი არჩევანი გვაქვს გასაკეთებელი: დაველოდოთ გემს თუ გავცუროთ
-# არჩევანი 3: მივედით კუნძულზე და დაგვხვდა გამოიქვაბული, რომელშიც დაგვხვდა სამი კარი თუ პირველ კარს გავაღებთ დაგვხვდება ცეცხლი, 
-# თუ მეორე კარს გავაღებთ, იქნება გველები და თუ მესამეს გავაღებთ, ვიპოვით განძს
+
