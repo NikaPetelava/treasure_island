@@ -21,25 +21,95 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 *******************************************************************************
 ''')
 
-print("Welcome to treasure island!")
-print("your mission is to find treasure on island")
+def welcome():
+  name = input("Enter Your name: ")
+  print(f"Greetings {name}!Welcome to treasure island!")
+  print("Your mission is to find treasure on island")
+  print()
+  
+def crossroad():
+    print('''You're on the crossroad. Where do you want to go?: 
+    1. left
+    2. right''')
+    answer = input("type the answer here: ")
+    print()
+    if answer == "1":
+      seashore()
+    elif answer == "2":
+      print("You've fallen into a hole. Game Over!")
+      quit()
+
+def seashore(): 
+    print('''You have arrived at the ocean seashore. There is an island in the distance across the ocean. what will you do?: 
+    1. wait for a boat
+    2. swim across''')
+    answer = input("type the answer here: ")
+    print()
+    if answer == "1": 
+      island()
+    elif answer == "2":
+      print("You've eaten by Shark. Game Over!")
+      quit()  
+
+def island():
+    print('''You've reached the island. Where do you want to go?: 
+    1. cave
+    2. forest
+    3. palm tree''')
+    answer = input("type the answer here: ")
+    print()
+    if answer == "1":
+      cave()
+    elif answer == "2":
+      forest()
+    elif answer == "3":
+      palm_tree()
 
 
-choice1 = input("You're on the crossroad. Which way do you go? Type 'left' or 'right': \n")
-if choice1 == 'left':
-  print("Congrats! you passed the first level succesfully!")
-  choice2=input("You have arrived at the ocean seashore. There is an island in the distance across the ocean. Type 'Wait' to wait for a boat or 'Swim' to go across.: \n")
-  if choice2 == 'Wait' or choice2 == 'wait':
-    print("Congrats! You passed the second level succesfully!")
-    choice3 = input("You've arrived at the island and stumbled upon a cave with three doors. Type 'first door,' 'second door,' or 'third door' to enter.: \n")
-    if choice3 == 'first door':
-      print("You fell into the lava. Game over!")
-    elif choice3 == "second door":
-      print("You've eaten by a monster. Game Over!") 
-    elif choice3 == "third door":
-      print("Congrats, You win!")
-  else:
-    print("You've eaten by Shark. Game Over!") 
-else:
-  print("Oh no! You've fallen into a hole.")
+def cave():
+    print('''you are at the cave. you see 3 entrance. which one do you choose?:
+    1. left
+    2. forward
+    3. right''')
+    answer = input ("type the answer here: ")
+    print()  
+    if answer == "1":
+      print("you fell into the lava! Game Over")
+      quit()
+    elif answer == "2":
+      print("Congratulations! You found the treasure! You Win!")  
+    elif answer == "3":
+      print("you found the piece of map that leads to the forest")
 
+def forest():
+    print('''you are at the forest. you see 3 way. Where do you want to go?:
+    1. left
+    2. right
+    3. forward''')
+    answer = input("type the answer here: ")
+    print()
+    if answer == "1":
+      print("You got to the puddle of the forest")
+    elif answer == "2":
+      print("You fall in trap. Game Over!")
+      quit()
+    elif answer == "3":
+      print("Congrats! You found the hint")
+      print("Cool! You found the piece of the map")
+
+def palm_tree():
+    print('''you are at the palm tree. you see 3 way. Where do you want to go?
+    1. left
+    2. right
+    3. forward''')
+    answer = input("type the answer here: ")
+    print()
+    if answer == "1":
+      print("Cool! You found the sword!")
+    elif answer == "2":
+      print("You found the hint")
+
+
+welcome()    
+crossroad()
+  

@@ -21,10 +21,12 @@ def shipwreck():
       choice = input("What are you going to do? Type 'run' or 'fight': \n").lower()
       if choice == "run":
         print("You got eaten by Bats")
+        quit()
       elif choice == "fight":
         print("You killed Bats")
     else:
       print("You fall into a hole. Game Over.")
+      quit()
 
   else:
     print("Invalid Input") 
